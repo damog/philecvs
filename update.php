@@ -39,18 +39,16 @@ if($fe != 0) {
 } else {
   if(file_exists('phile')) {
     print "It seems you have a previous phile installation, I'll update it \n";
-    $cvs = exec("$paths[3] update -dP phile");
-    if($cvs) {
+    $cvs = exec("$paths[3] -d$cvsroot update phile");
+    if($cvs == '') {
       print "\n";
       print "Thanks for using phile - php file manager \n";
     } else {
       print "ERROR: Couldn't update CVS tree \n";
     }
   } else {
-    
     print "Press <ENTER> on CVS password input \n";
-    $cvs = exec("$paths[3] -z3 -d$cvsroot login");
-    
+    $cvs = exec("$paths[3] -z3 -d$cvsroot login") or die("me mori");
     if($cvs) {
       print "You are logged in :-) \n";
       print "I'll checkout a new cvs tree \n";
