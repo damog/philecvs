@@ -39,7 +39,7 @@ if($fe != 0) {
 } else {
   if(file_exists('phile')) {
     print "It seems you have a previous phile installation, I'll update it \n";
-    $cvs = exec("$paths[3] -d$cvsroot update phile");
+    $cvs = exec("$paths[3] -d$cvsroot update -dP phile");
     if($cvs == '') {
       print "\n";
       print "Thanks for using phile - php file manager \n";
