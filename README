@@ -32,8 +32,39 @@ expect everything to work :)
 update.php usage:
 $ php update.php
 
+
+requeriments
+============
+Note that you'll need php >= 4.3 in order to run update.php (php-cli was
+developed for 4.2 but it was useful on 4.3.x). If you don't have a 4.3 php
+installation, you can browse manually phile cvs repository. Maybe one day
+i'll code a bash script instead of php script for getting phile.
+
+
+webpage
+=======
+
+News about the development of phile will be published on update.php, and
+in the website: http://phile.sourceforge.net/
+
+
 authors
 =======
 
 At the moment, phile is being developed only by me :-P
 David Moreno Garza <damog@damog.net>, in the heart of Mexico ;)
+
+
+license
+=======
+
+phile is being developed under the arms of gnu/gpl license. A copy of this
+license has been included on COPYRIGHT file.
+
+
+thanks
+======
+
+Special thanks to Jonathan Hernández <ion@gluch.org.mx>, which created
+JAWS [http://jaws.com.mx], and thanks to Polo Caballero 
+[http://www.pitakill.net] for always being there.
