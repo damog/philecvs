@@ -1,0 +1,39 @@
+phile - php file manager
+========================
+
+I really don't know what phile is :-). It was intended for a classical
+file manager, but I think there are several excellent projects out there.
+Maybe I want to see it as a replacement of a webserver's face, for
+displaying the files.
+
+The most common webserver is Apache, and the face for listing files is
+ugly. phile could fit in that place: Maybe :)
+
+
+update.php
+==========
+
+There is not official releases of phile: I don't like traditional releases.
+Instead, I use a php script called update.php, which you need to run in order
+to get phile.
+
+This method brings several nice features:
+- It breaks the traditional: url, get, download, unpack, install.
+- There are not user mistakes :)
+
+When you run update.php, it looks for an existing phile/ directory in the
+current location. If it doesn't exists, the script creates it by
+checking out the cvs tree. If it already exists, updates the tree and
+make additional stuff, like displaying news or so.
+
+This a first revision of this document, and also, the script. Do not
+expect everything to work :)
+
+update.php usage:
+$ php update.php
+
+authors
+=======
+
+At the moment, phile is being developed only by me :-P
+David Moreno Garza <damog@damog.net>, in the heart of Mexico ;)
